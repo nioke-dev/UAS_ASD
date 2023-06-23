@@ -6,7 +6,7 @@
 
 /**
  *
- * @author Imam`
+ * @author Nurul Mustofa`
  */
 public class DLLMain {
     public static void main(String[] args) {

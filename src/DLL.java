@@ -27,13 +27,10 @@ public class DLL {
         Node2p tmp = head;
         int count = 0;
 
-        while (count < start) {
-            tmp = tmp.next;
-            count++;
-        }
-
-        while (count <= end) {
-            sublist.addLast(tmp.data);
+        while (tmp != null) {
+            if (count >= start && count <= end) {
+                sublist.addLast(tmp.data);
+            }
             tmp = tmp.next;
             count++;
         }
@@ -50,7 +47,7 @@ public class DLL {
         }
     }
 
-    // soal 4 new
+    // soal 4
     boolean containsAll(DLL list) {
         Node2p tmp = list.head;
         while (tmp != null) {
